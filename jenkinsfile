@@ -1,0 +1,12 @@
+pipeline {
+    agent { label 'maven' }
+
+    stages {
+        stage('clone-code') {
+            steps {
+               git branch: 'main', url: 'https://github.com/PRADEEP4B1/tweet-trend-new.git'
+            }
+        }
+    }
+}
+
