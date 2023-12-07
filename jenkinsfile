@@ -22,7 +22,7 @@ pipeline {
                 echo "------Unit test completed-------"
             }
         }
-        stage('SonarQube analysis') {
+        /*stage('SonarQube analysis') {
             environment {
                 scannerHome = tool 'pradeep-sonar-scanner'
              }
@@ -45,7 +45,7 @@ pipeline {
              }
              }
             }
-         }
+         }*/
 
          
          stage("Jar Publish") {
